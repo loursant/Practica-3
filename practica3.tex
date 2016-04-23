@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{tikz-dependency}
+
+\usepackage{tipa} % herramientas para manejar símbolos fonéticos
+\usepackage{tipx}
+
+\usepackage{gb4e} % ejemplos numerados
+
+\usepackage{qtree} % árboles sintácticos
+
+\title{Práctica 3 (LMWeb 2016)}
+\author{Lourdes Santamaría}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Instrucciones}
+
+\subsection{Objetivo}
+
+El objetivo de esta práctica es que demuestres que eres capaz de elaborar un documento en \LaTeX\ replicando otro.
+
+\subsection{Entrega}
+
+En este caso tendrás que replicar y adaptar a tu caso un documento de ejemplo que yo te proporciono. Solo verás mi versión en PDF: tendrás que elaborar el código \LaTeX\ por tu cuenta y generar el documento PDF final.
+
+\subsection{Fecha límite de entrega}
+
+La fecha tope de entrega es el \textbf{domingo 24/04 a las 23:59}.
+
+\subsection{Instrucciones}
+
+\begin{itemize}
+
+\item Utilizando la herramienta que prefieras, crea un documento nuevo vacío imitando el contenido y la estructura del modelo de práctica 3 que yo te proporciono.
+
+\item Te recomiendo avanzar poco a poco para ir probando que tu documento compila correctamente. Es más sencillo detectar errores de este modo.
+
+\item Cuando hayas terminado, descarga de manera local en tu ordenador la versión del código fuente y tu versión PDF final y sube ambos ficheros al cmpus virtual.
+
+\end{itemize}
+
+\section{Práctica}
+
+En esta sección comienza la práctica propiamente dicha. ¡Suerte!
+
+\subsection{Introducción del texto \LaTeX\ }
+
+\subsection{Fonética: símbolos del IPA}
+
+En esta sección bastará con que seas capaz de representar como mínimo la siguiente frase, adaptada a tus circustancias y a tu pronunciación particular:
+
+\begin{exe}
+
+\ex Hola, me llamo Lourdes, nací en Madrid y soy estudiante de lingüística y lenguas aplicadas.
+
+La transcripción fonética del ejemplo 1 es:
+
+\begin{IPA}
+
+[.]
+
+\end{IPA}
+
+\subsection{Sintáxis: análisis de constituyentes.}
+
+Representa los árboles sintácticos de las dos siguientes oraciones:
+
+\begin{exe}
+
+\ex The cat is on the nap.
+\ex Ayer vi a tu padre corriendo
+
+\end{exe}
+
+El árbol sintáctico del ejemplo 2 es:
+
+\Tree [.S [.NP [.DT The ] [.NN cat ] ] [.VP [.VBZ is ] [.PP [.IN on ] [.NP [.DT the ] [.NN nap ] ] ] ] ]
+
+El ejemplo 3 es ambiguo y tiene dos análisis sintácticos, igualmente correctos:
+
+\Tree [.O [.SV [.SA [.RB Ayer ] ] [.VBC ví ] [.SP [.IN a ] [.SN [.DTP tu ] [.NN padre ] ] ] [.VBG corriendo ] ] ] ]
+
+\Tree [.O [.SV [.SA [.RB Ayer ] ] [.VBC ví ] [.SP [.IN a ] [.SN [.DTP tu ] [.NN padre ] [.VBG corriendo ] ] ] ] ]
+
+\end{document}
